@@ -37,9 +37,4 @@
 	ul.ap_pagination li:nth-child(even) a.selected{
 		font-weight:bold; 
 		text-decoration:underline;
-		padding:0;
-	}
-	ul.ap_pagination li.ap_reset a.selected,
-	ul.ap_pagination li.ap_reset a:hover{
-		background-color: transparent;	
 	}
