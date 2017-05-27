@@ -23,14 +23,16 @@ ul.layout_V.ap_pagination li{
 	width:98%;
 }
 ul.ap_pagination li {
-	padding:0;
-    width: 3.7%;
 	background-color: #fff;
 	border: medium none;
 	border-radius: 18px;
 	box-shadow: 0 1px 0 rgba(100, 100, 100, 0.25);
 	cursor: pointer;
 	font-size: 14px;
+	margin-bottom: 4px;
+    margin-right: 4px;
+    padding: 0;
+    width: 4%;
 }
 ul.ap_pagination li a{
 	background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 0 270deg, #f8f8f8, #e9e9e9) repeat scroll 0 0;
@@ -57,4 +59,12 @@ ul.ap_pagination li a.selected{
 	padding: 1px 4px;
 	border: 1px solid #777;
 		
+}
+@media only screen and (max-width: 480px) {
+	ul.ap_pagination li {
+		height: 28px;
+	margin-bottom: 2px;
+	margin-right: 4px;
+	width: 28px;
+	}
 }

@@ -54,3 +54,11 @@ ul.ap_pagination li a.selected{
 	color: #906E62;
 	background-color: #fff;	
 }
+
+@media only screen and (max-width: 480px) {
+	ul.ap_pagination li {
+		height: 28px;
+		width: 28px;
+	}
+}
+
