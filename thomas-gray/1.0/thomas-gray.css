@@ -36,7 +36,7 @@ ul.ap_pagination li {
 ul.ap_pagination li:hover{
 	border: 1px solid #906E62;	
 }
-ul.ap_pagination li:not(.ap_reset) a {
+ul.ap_pagination li a {
 	color: #fff;
 	width:100%;
 	padding: 4px;
@@ -48,14 +48,15 @@ ul.ap_pagination li:visited{
 }
 ul.ap_pagination li:active, 
 ul.ap_pagination li:visited,
-ul.ap_pagination li:not(.ap_reset) a:hover,
-ul.ap_pagination li:not(.ap_reset) a.selected{
+ul.ap_pagination li a:hover,
+ul.ap_pagination li a.selected{
     text-decoration:none;
 	color: #906E62;
 	background-color: #fff;	
-	padding:0;
 }
-ul.ap_pagination li.ap_reset a.selected,
-ul.ap_pagination li.ap_reset a:hover{
-	background-color: transparent;	
+@media only screen and (max-width: 480px) {
+	ul.ap_pagination li {
+		height: 28px;
+		width: 28px;
+	}
 }

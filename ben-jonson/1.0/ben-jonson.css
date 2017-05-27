@@ -36,7 +36,7 @@ ul.ap_pagination li {
 ul.ap_pagination li:hover{
 	border: 0;	
 }
-ul.ap_pagination li:not(.ap_reset) a {
+ul.ap_pagination li a {
 	color: #fff;
 	width:100%;
 	padding: 4px;
@@ -50,18 +50,21 @@ ul.ap_pagination li:active,
 ul.ap_pagination li:visited{
 	background-color: #e78e1b;
 }
-ul.ap_pagination li:not(.ap_reset) a:active, 
-ul.ap_pagination li:not(.ap_reset) a:visited,
-ul.ap_pagination li:not(.ap_reset) a:hover,
-ul.ap_pagination li:not(.ap_reset) a.selected{
+ul.ap_pagination li a:active, 
+ul.ap_pagination li a:visited,
+ul.ap_pagination li a:hover,
+ul.ap_pagination li a.selected{
 	color: #fff;
 	background-color: #fc9200;
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-	text-decoration:none;
-	padding:0;	
+	text-decoration:none;	
 }
-ul.ap_pagination li.ap_reset a.selected,
-ul.ap_pagination li.ap_reset a:hover{
-	background-color: transparent;	
-}
+@media only screen and (max-width: 480px) {
+		ul.ap_pagination li {
+			height: 28px;
+			width: 28px;
+			margin-right:3px;
+			margin-bottom:3px;
+		}
+	}
