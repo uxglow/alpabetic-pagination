@@ -112,11 +112,3 @@ ul.ap_pagination li a:visited:hover{
 		min-height: 20px;
 	}
 }
-@media only screen and (max-width: 480px) {
-		ul.ap_pagination li {
-			height: 28px;
-			width: 28px;
-			margin-right:3px;
-			margin-bottom:3px;
-		}
-	}
